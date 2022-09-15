@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>国际支付宝对接方案 | ckcoding</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="愿天堂没有996">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.ff5f18e1.js" as="script"><link rel="preload" href="/assets/js/2.6b8ff628.js" as="script"><link rel="preload" href="/assets/js/9.2f529b4b.js" as="script"><link rel="prefetch" href="/assets/js/10.72905c10.js"><link rel="prefetch" href="/assets/js/3.4972d34c.js"><link rel="prefetch" href="/assets/js/4.37a53c38.js"><link rel="prefetch" href="/assets/js/5.7126b688.js"><link rel="prefetch" href="/assets/js/6.198b5d5e.js"><link rel="prefetch" href="/assets/js/7.c4b93efa.js"><link rel="prefetch" href="/assets/js/8.e8f692ae.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ckcoding</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/apidocs/" class="nav-link router-link-active">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/ckcoding" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHup
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/apidocs/" class="nav-link router-link-active">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/ckcoding" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHup
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/apidocs/" aria-current="page" class="sidebar-link">/apidocs/</a></li><li><a href="/apidocs/xiaobingBot.html" class="sidebar-link">微软小冰 Bot</a></li><li><a href="/apidocs/globalAlipay.html" aria-current="page" class="active sidebar-link">国际支付宝对接方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/apidocs/globalAlipay.html#参考资料" class="sidebar-link">参考资料</a></li><li class="sidebar-sub-header"><a href="/apidocs/globalAlipay.html#准备-密钥生成-配置" class="sidebar-link">准备（密钥生成，配置）</a></li><li class="sidebar-sub-header"><a href="/apidocs/globalAlipay.html#开发" class="sidebar-link">开发</a></li><li class="sidebar-sub-header"><a href="/apidocs/globalAlipay.html#测试" class="sidebar-link">测试</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="国际支付宝对接方案"><a href="#国际支付宝对接方案" class="header-anchor">#</a> 国际支付宝对接方案</h1> <h2 id="参考资料"><a href="#参考资料" class="header-anchor">#</a> 参考资料</h2> <p>资质申请PDF: <a href="https://www.china-payments.com/pdf/alipay_global_help.pdf" target="_blank" rel="noopener noreferrer">商户申请资料<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="准备-密钥生成-配置"><a href="#准备-密钥生成-配置" class="header-anchor">#</a> 准备（密钥生成，配置）</h2> <h3 id="登录账号-806108998-qq-com-测试账号"><a href="#登录账号-806108998-qq-com-测试账号" class="header-anchor">#</a> 登录账号：806108998@qq.com（测试账号）</h3> <h3 id="登录账号"><a href="#登录账号" class="header-anchor">#</a> 登录账号：********</h3> <h3 id="密钥-使用rsa2密钥-公钥上传到国际支付宝中"><a href="#密钥-使用rsa2密钥-公钥上传到国际支付宝中" class="header-anchor">#</a> 密钥：使用RSA2密钥，公钥上传到国际支付宝中</h3> <p>参考链接: <a href="https://miniu.alipay.com/keytool/create" target="_blank" rel="noopener noreferrer">密钥线上获取方式，选择PKCS1（国内）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="测试软件下载-https-global-alipay-com-docs-ac-ref-testwallet"><a href="#测试软件下载-https-global-alipay-com-docs-ac-ref-testwallet" class="header-anchor">#</a> 测试软件下载：https://global.alipay.com/docs/ac/ref/testwallet</h3> <h4 id="应用公钥"><a href="#应用公钥" class="header-anchor">#</a> 应用公钥：</h4> <div class="language- extra-class"><pre class="language-text"><code>
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzLCgELOsZ/fC/x2wv3BihkO//tukEOxq5omCQv6lP7R0m/7frIWubwYvFP31Mw7myH8MnfogITMNDNytoTvI088qJIrteSBdRnnWZiOUr/eoBRI/ZUT38plNXxXCVTi/xq9LakK2gP8FTy77xlUKl5Lo+vhpdt0xRhrsKr3jOEbPffy+WaInv3D5roP5yXWIXhFKDk3Wp+A7Y7B8Yp2ohmwUdSwIUMs+cTqjpPvKLIvgEE8gN5IFRoUpcTEeMXdC8msjaJdhI66p3LgTfZj+c4ynFG5Y16xqaM6SIN8ab3zdpRBHPviepqJuYaJPwWMpXV1/u1c7wmTriGtuJIFPSwIDAQAB
+
+</code></pre></div><h4 id="应用私钥"><a href="#应用私钥" class="header-anchor">#</a> 应用私钥：</h4> <div class="language- extra-class"><pre class="language-text"><code>
+MIIEpAIBAAKCAQEAzLCgELOsZ/fC/x2wv3BihkO//tukEOxq5omCQv6lP7R0m/7frIWubwYvFP31Mw7myH8MnfogITMNDNytoTvI088qJIrteSBdRnnWZiOUr/eoBRI/ZUT38plNXxXCVTi/xq9LakK2gP8FTy77xlUKl5Lo+vhpdt0xRhrsKr3jOEbPffy+WaInv3D5roP5yXWIXhFKDk3Wp+A7Y7B8Yp2ohmwUdSwIUMs+cTqjpPvKLIvgEE8gN5IFRoUpcTEeMXdC8msjaJdhI66p3LgTfZj+c4ynFG5Y16xqaM6SIN8ab3zdpRBHPviepqJuYaJPwWMpXV1/u1c7wmTriGtuJIFPSwIDAQABAoIBAQC8b7nbxlzolcnZLM8jXmYFbueYy0E+Jze+pkbaQC2G+S0E0129KJBOO2YqsCUEbSp+15+Y68Saa7IO7jWWIkCe5a/JVnCKOwZDtDRxcT4XxSnUCVl9dEHC/+ifqZtu80Bxu7z0xRfYp22O2RUGIBIROjjrmrcUq0sKXAygyJEeo0QvLcl9lxySegqCEP1/Rjn1tSAcDSifb6kKlArxBW6e4C7RSqL3z3+hK5qAbkCKBee14f1AvDbCt729Om2Jp+0BWXXWc4A5fQ1nAUZK+hTEkM+U8gToBCCFIxhIz7R/NdM3CjQB4dWl207sL9sJNXXa2P9VFvwUEmf9B9JJxi/ZAoGBAOdvILHb40EEoruxk9Ad8KhLzsfkpP0ZZ9DjETAsAWamrh8DPnxP25fuuoWOtuNMlI9LlIMnzRdbwaNlVwwKeFcaOaIgtj8+VDZlVe0XxKSLzcq07w/zjJ36mshhKeiT0LnyAKJ1EKdcckpamcp2UkVBTb01Cysi0me01cqgzTYPAoGBAOJqw/73fsL6nGx70WXVAD0aGcimDcyZihqCmnrEvqdPA63Ba7kutpDfC81mVE8JuZZ3gWhAv/ROtmbm5dehgnSBcwjwF5Xw46GpMdltMr2MQdqNxA7MZpr9Eddi+o9XwtJEIJT/6/KxCpk7ph0Esi4e+ip2sIl4qBl0NWLxxa8FAoGANpkj6HHMkhkq3wbMrUty6/E+bjAFsGQe9suq0WeASRxHda+JPUCFuLksLbf2c3cskQWumqZ4HuuZqheNSpzpuPrJ3/LBq/fjXBXaCJ4T2RHWUd0PjP7TDK4DeARcI69DjaqG9cySSjloCRyIrZfuXsJCOcHayalkY+zohu4am4cCgYEAuxkW1T6XlW+ai1rV8pxNEjDbVZ9Cj+vg339FQGYMVh1JIPBQoDolyxlFm3oP+TBEGD6wxQGcnbndqLLtA38HWlcORDiChPkGYbR66Pz/jPq2AHBdrwzhTPoLID0+Z+1RpId/lSDWTTpXU8CiyB/1TX9zoltqDm+SGVaaNyUrAjECgYAcreNZTkceG81zoEIVo9EmhVLcwyzJ3jk5RLFrvfNh80eiq4IKk12QKyOB0rBVbyAmI1RgMVRx0QNMWTKJJLV+80HaS9OQlx9mMaBbaeBrYDSsh/q5TwJrcoV45fYhaK15QxnVb9W0+WB72ETSRsTpka5zxuF877SiKqvsk7yvaQ==
+
+</code></pre></div><h4 id="支付宝公钥"><a href="#支付宝公钥" class="header-anchor">#</a> 支付宝公钥：</h4> <div class="language- extra-class"><pre class="language-text"><code>
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjJkGHwE3wT+Ws3wr3yp+XXyYi7m2ZB2bh9X/noLDaw32twXTCjSLHJJJwdVXro6uRGmgIhzD58hiNrQwBpMjWwgBLfeCdefJYSe71DPw5JYCb+EGH7b2CISCEIvbKtGA834Dhu6zuPqrR/HQKqjY7qIbtpXK4tizRCvSUzRWg3cjV+LtGO2YbzNVrb8aNQfXH3SLhtQyN0SmhcD6x85vOOOmvbZNUX/8aIVbRHB5zEZ5ObxrAzx0kv50Tgd6Er07qhFhh0miobGktOquzFutouO+k6evPSO4RSdDjUMW0E6Zod7CBhvz/bZjCy49iLCEYVEkfcoLL35TDWZaCEoYyQIDAQAB
+
+</code></pre></div><h2 id="开发"><a href="#开发" class="header-anchor">#</a> 开发</h2> <blockquote><p><a href="https://global.alipay.com/docs/ac/cashierpayment/accepting-payments" target="_blank" rel="noopener noreferrer">流程概述<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>完整的支付流程，其中包含，支付，查询支付，退款等！</p></blockquote> <h3 id="签名"><a href="#签名" class="header-anchor">#</a> 签名</h3> <blockquote><p>签名步骤</p></blockquote> <ul><li>第一步：获取私钥</li> <li>第二步：构造要签名的内容(解释如下示例)</li> <li>第三步：使用<code>SHA256withRSA</code>算法对JSON内容进行哈希处理。然后使用客户端的RSA私钥对值进行签名，RSA 密钥/对的长度必须为 2048 位。</li></ul> <p><code>SHA256withRSA</code>加密示例</p> <p><code>未组装</code>的数据</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;head&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.0.0&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;function&quot;</span><span class="token operator">:</span> <span class="token string">&quot;alipay.intl.acquiring.agreement.payCancel&quot;</span><span class="token punctuation">,</span> <span class="token comment">//未知</span>
+		<span class="token property">&quot;clientId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;211xxxxxxxxxxxxxxx044&quot;</span><span class="token punctuation">,</span> <span class="token comment">//客户端ID</span>
+		<span class="token property">&quot;reqTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2001-07-04T12:08:56+05:30&quot;</span><span class="token punctuation">,</span> <span class="token comment">//请求时间精确到毫秒级</span>
+		<span class="token property">&quot;reqMsgId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1234567asdfasdf1123fda&quot;</span><span class="token punctuation">,</span> <span class="token comment">//未知</span>
+		<span class="token property">&quot;reserve&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">//这里是订单类数据详情</span>
+			<span class="token property">&quot;order&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+				<span class="token property">&quot;orderAmount&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+					<span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HKD&quot;</span><span class="token punctuation">,</span> <span class="token comment">//币种</span>
+					<span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1314&quot;</span> <span class="token comment">//价格</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;orderDescription&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Mika's coffee shop&quot;</span><span class="token punctuation">,</span> <span class="token comment">//商品名称</span>
+				<span class="token property">&quot;referenceOrderId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ORDER_20220112101619385&quot;</span><span class="token punctuation">,</span> <span class="token comment">//订单编号</span>
+				<span class="token property">&quot;env&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+					<span class="token property">&quot;osType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ANDROID&quot;</span><span class="token punctuation">,</span> <span class="token comment">//机型</span>
+					<span class="token property">&quot;terminalType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;WAP&quot;</span> <span class="token comment">//web代表pc，wap表示移动端</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;paymentAmount&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+				<span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HKD&quot;</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1314&quot;</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;paymentMethod&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+				<span class="token property">&quot;paymentMethodType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ALIPAY_HK&quot;</span> <span class="token comment">//支付币种</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;settlementStrategy&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+				<span class="token property">&quot;settlementCurrency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HKD&quot;</span> <span class="token comment">//计算币种</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;paymentNotifyUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.gaga.com/notify&quot;</span><span class="token punctuation">,</span> <span class="token comment">//结果通知</span>
+			<span class="token property">&quot;paymentRedirectUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://global.alipay.com/doc/cashierpayment/intro&quot;</span><span class="token punctuation">,</span> <span class="token comment">//回调地址</span>
+			<span class="token property">&quot;paymentRequestId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;REQUEST_20220112101619385&quot;</span><span class="token punctuation">,</span> <span class="token comment">//单号</span>
+			<span class="token property">&quot;productCode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CASHIER_PAYMENT&quot;</span> <span class="token comment">//默认</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;body&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;merchantId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;218xxxxxxxxxxxxxxx023&quot;</span><span class="token punctuation">,</span> <span class="token comment">//商户ID</span>
+		<span class="token property">&quot;acquirementId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2015xxxxxxxxxxxxxxxxxxxxx747&quot;</span> <span class="token comment">//paymentId订单ID，可用于退款</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><code>组装后</code>的加密参数</p> <blockquote><p>这里无需排序，Post代表请求方式，后面为请求API，其次数据格式（utf-8），其次商户号，时间戳，然后为提交的数据；
+时间格式为 ISO 8601 ，例如：2019-05-28T12:12:12+08:00
+代码：moment().format('YYYY-MM-DD HH:mm:ss'),</p></blockquote> <div class="language-json extra-class"><pre class="language-json"><code>POST /ams/sandbox/api/v1/payments/pay?_output_charset=utf<span class="token number">-8</span>&amp;_input_charset=utf<span class="token number">-8</span>
+SANDBOX_5Y5X382YF8CZ05415.<span class="token number">2022</span><span class="token number">-01</span>-13T11<span class="token operator">:</span><span class="token number">45</span><span class="token operator">:</span><span class="token number">51</span>+<span class="token number">08</span><span class="token operator">:</span><span class="token number">00</span>.<span class="token punctuation">{</span><span class="token property">&quot;order&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;orderAmount&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;currency&quot;</span><span class="token operator">:</span><span class="token string">&quot;HKD&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;value&quot;</span><span class="token operator">:</span><span class="token string">&quot;1314&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">&quot;orderDescription&quot;</span><span class="token operator">:</span><span class="token string">&quot;Mika's coffee shop&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;referenceOrderId&quot;</span><span class="token operator">:</span><span class="token string">&quot;ORDER_20220113151043428&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;env&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;osType&quot;</span><span class="token operator">:</span><span class="token string">&quot;ANDROID&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;terminalType&quot;</span><span class="token operator">:</span><span class="token string">&quot;WAP&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">&quot;paymentAmount&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;currency&quot;</span><span class="token operator">:</span><span class="token string">&quot;HKD&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;value&quot;</span><span class="token operator">:</span><span class="token string">&quot;1314&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">&quot;paymentMethod&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;paymentMethodType&quot;</span><span class="token operator">:</span><span class="token string">&quot;ALIPAY_HK&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">&quot;settlementStrategy&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;settlementCurrency&quot;</span><span class="token operator">:</span><span class="token string">&quot;HKD&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">&quot;paymentNotifyUrl&quot;</span><span class="token operator">:</span><span class="token string">&quot;https://www.gaga.com/notify&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;paymentRedirectUrl&quot;</span><span class="token operator">:</span><span class="token string">&quot;https://global.alipay.com/doc/cashierpayment/intro&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;paymentRequestId&quot;</span><span class="token operator">:</span><span class="token string">&quot;REQUEST_20220113151043428&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;productCode&quot;</span><span class="token operator">:</span><span class="token string">&quot;CASHIER_PAYMENT&quot;</span><span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>示例代码</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">const</span> crypto <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'crypto'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> privateKey <span class="token operator">=</span> <span class="token string">'MIIEpAIBAAKCAQEAzLCgELOsZ/fC/x2wv3BihkO//tukEOxq5omCQv6lP7R0m/7frIWubwYvFP31Mw7myH8MnfogITMNDNytoTvI088qJIrteSBdRnnWZiOUr/eoBRI/ZUT38plNXxXCVTi/xq9LakK2gP8FTy77xlUKl5Lo+vhpdt0xRhrsKr3jOEbPffy+WaInv3D5roP5yXWIXhFKDk3Wp+A7Y7B8Yp2ohmwUdSwIUMs+cTqjpPvKLIvgEE8gN5IFRoUpcTEeMXdC8msjaJdhI66p3LgTfZj+c4ynFG5Y16xqaM6SIN8ab3zdpRBHPviepqJuYaJPwWMpXV1/u1c7wmTriGtuJIFPSwIDAQABAoIBAQC8b7nbxlzolcnZLM8jXmYFbueYy0E+Jze+pkbaQC2G+S0E0129KJBOO2YqsCUEbSp+15+Y68Saa7IO7jWWIkCe5a/JVnCKOwZDtDRxcT4XxSnUCVl9dEHC/+ifqZtu80Bxu7z0xRfYp22O2RUGIBIROjjrmrcUq0sKXAygyJEeo0QvLcl9lxySegqCEP1/Rjn1tSAcDSifb6kKlArxBW6e4C7RSqL3z3+hK5qAbkCKBee14f1AvDbCt729Om2Jp+0BWXXWc4A5fQ1nAUZK+hTEkM+U8gToBCCFIxhIz7R/NdM3CjQB4dWl207sL9sJNXXa2P9VFvwUEmf9B9JJxi/ZAoGBAOdvILHb40EEoruxk9Ad8KhLzsfkpP0ZZ9DjETAsAWamrh8DPnxP25fuuoWOtuNMlI9LlIMnzRdbwaNlVwwKeFcaOaIgtj8+VDZlVe0XxKSLzcq07w/zjJ36mshhKeiT0LnyAKJ1EKdcckpamcp2UkVBTb01Cysi0me01cqgzTYPAoGBAOJqw/73fsL6nGx70WXVAD0aGcimDcyZihqCmnrEvqdPA63Ba7kutpDfC81mVE8JuZZ3gWhAv/ROtmbm5dehgnSBcwjwF5Xw46GpMdltMr2MQdqNxA7MZpr9Eddi+o9XwtJEIJT/6/KxCpk7ph0Esi4e+ip2sIl4qBl0NWLxxa8FAoGANpkj6HHMkhkq3wbMrUty6/E+bjAFsGQe9suq0WeASRxHda+JPUCFuLksLbf2c3cskQWumqZ4HuuZqheNSpzpuPrJ3/LBq/fjXBXaCJ4T2RHWUd0PjP7TDK4DeARcI69DjaqG9cySSjloCRyIrZfuXsJCOcHayalkY+zohu4am4cCgYEAuxkW1T6XlW+ai1rV8pxNEjDbVZ9Cj+vg339FQGYMVh1JIPBQoDolyxlFm3oP+TBEGD6wxQGcnbndqLLtA38HWlcORDiChPkGYbR66Pz/jPq2AHBdrwzhTPoLID0+Z+1RpId/lSDWTTpXU8CiyB/1TX9zoltqDm+SGVaaNyUrAjECgYAcreNZTkceG81zoEIVo9EmhVLcwyzJ3jk5RLFrvfNh80eiq4IKk12QKyOB0rBVbyAmI1RgMVRx0QNMWTKJJLV+80HaS9OQlx9mMaBbaeBrYDSsh/q5TwJrcoV45fYhaK15QxnVb9W0+WB72ETSRsTpka5zxuF877SiKqvsk7yvaQ=='</span>
+
+<span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">POST /ams/sandbox/api/v1/payments/pay
+SANDBOX_5Y5X382YF8CZ05415.2022-01-13T10:55:41Z.{&quot;notifyType&quot;: &quot;PAYMENT_RESULT&quot;,&quot;result&quot;: {&quot;resultCode&quot;: &quot;SUCCESS&quot;,&quot;resultStatus&quot;: &quot;S&quot;,&quot;resultMessage&quot;: &quot;success&quot;},&quot;paymentRequestId&quot;: &quot;20200101234567890444&quot;,&quot;paymentId&quot;: &quot;20200101234567890132&quot;,&quot;paymentAmount&quot;: {&quot;value&quot;: &quot;8000&quot;,&quot;currency&quot;: &quot;EUR&quot;},&quot;actualPaymentAmount&quot;: {&quot;value&quot;: &quot;8000&quot;,&quot;currency&quot;: &quot;EUR&quot;},&quot;paymentCreateTime&quot;: &quot;2020-01-01T12:01:00+08:30&quot;,&quot;paymentTime&quot;: &quot;2020-01-01T12:01:01+08:30&quot;}</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token comment">// ----------------</span>
+<span class="token comment">// 加密</span>
+<span class="token comment">// ----------------</span>
+privateKey <span class="token operator">=</span> <span class="token string">&quot;-----BEGIN RSA PRIVATE KEY-----\n&quot;</span> <span class="token operator">+</span>
+  <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> offset <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> str <span class="token operator">=</span> privateKey<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>offset<span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>str <span class="token operator">==</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      offset <span class="token operator">+=</span> <span class="token number">64</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  <span class="token string">&quot;\n-----END RSA PRIVATE KEY-----&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> sign <span class="token operator">=</span> crypto<span class="token punctuation">.</span><span class="token function">createSign</span><span class="token punctuation">(</span><span class="token string">'RSA-SHA256'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+sign<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Buffer<span class="token punctuation">.</span>from</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> sig <span class="token operator">=</span> sign<span class="token punctuation">.</span><span class="token function">sign</span><span class="token punctuation">(</span>privateKey<span class="token punctuation">,</span> <span class="token string">'base64'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sig<span class="token punctuation">)</span>
+</code></pre></div><ul><li>第四步：将生成的签名添加到请求头中(其实这一步等于进行支付)</li></ul> <h3 id="支付"><a href="#支付" class="header-anchor">#</a> 支付</h3> <p><strong>接口地址</strong></p> <ul><li>地址：<code>/api/v1/payments/pay</code></li> <li>方法：<code>POST</code></li></ul> <p><strong>请求头</strong></p> <table><thead><tr><th>序号</th> <th>类型</th> <th>值</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td>client-id</td> <td>SANDBOX_5Y5X382YF8CZ05415</td> <td>商家的ID</td></tr> <tr><td>2</td> <td>request-time</td> <td>2022-01-13T15:33:00+08:00</td> <td>请求创建时间，注意时间格式</td></tr> <tr><td>3</td> <td>signature</td> <td>asignaturelgorithm=RSA256,keyVersion=1....</td> <td>签名后的数据</td></tr></tbody></table> <p><strong>请求体</strong></p> <table><thead><tr><th>序号</th> <th>键值</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td></td> <td>JSON</td> <td>详见签名中<code>未组装</code>的参数</td></tr></tbody></table> <p><strong>请求示例</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> axios <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'axios'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token string">'{&quot;order&quot;:{&quot;orderAmount&quot;:{&quot;currency&quot;:&quot;HKD&quot;,&quot;value&quot;:&quot;1314&quot;},&quot;orderDescription&quot;:&quot;Mika\'s coffee shop&quot;,&quot;referenceOrderId&quot;:&quot;ORDER_20220113151043428&quot;,&quot;env&quot;:{&quot;osType&quot;:&quot;ANDROID&quot;,&quot;terminalType&quot;:&quot;WAP&quot;}},&quot;paymentAmount&quot;:{&quot;currency&quot;:&quot;HKD&quot;,&quot;value&quot;:&quot;1314&quot;},&quot;paymentMethod&quot;:{&quot;paymentMethodType&quot;:&quot;ALIPAY_HK&quot;},&quot;settlementStrategy&quot;:{&quot;settlementCurrency&quot;:&quot;HKD&quot;},&quot;paymentNotifyUrl&quot;:&quot;https://www.gaga.com/notify&quot;,&quot;paymentRedirectUrl&quot;:&quot;https://global.alipay.com/doc/cashierpayment/intro&quot;,&quot;paymentRequestId&quot;:&quot;REQUEST_20220113151043428&quot;,&quot;productCode&quot;:&quot;CASHIER_PAYMENT&quot;}'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">'post'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'https://open-sea.alipay.com/ams/sandbox/api/v1/payments/pay?_output_charset=utf-8&amp;_input_charset=utf-8'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span> 
+    <span class="token string-property property">'accept'</span><span class="token operator">:</span> <span class="token string">' application/json'</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">'client-id'</span><span class="token operator">:</span> <span class="token string">' SANDBOX_5Y5X382YF8CZ05415'</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">'content-type'</span><span class="token operator">:</span> <span class="token string">' text/plain;charset=UTF-8'</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">'origin'</span><span class="token operator">:</span> <span class="token string">' https://global.alipay.com'</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">'original_host'</span><span class="token operator">:</span> <span class="token string">' open-sea.alipay.com'</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">'referer'</span><span class="token operator">:</span> <span class="token string">' https://global.alipay.com/'</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">'request-time'</span><span class="token operator">:</span> <span class="token string">' 2022-01-13T15:33:00+08:00'</span><span class="token punctuation">,</span> 
+    <span class="token string-property property">'signature'</span><span class="token operator">:</span> <span class="token string">' algorithm=RSA256,keyVersion=1,signature=H4PUC2Y8ZM%2FlULrDwKABk91vASeWkxannZ1DKceNLqlGvNw6vA0YM%2BP4QWGbpPGJ5aPNeEhdAYso%2FQCXaGk9D96G3FolDyt4kMNDDEw1PtiPFxP%2B5V2est5d4iHQyIXrohRi%2BYTeJNG4e91pRdQHCNRTMm3sC9WSCLEniSr1kXWtte5Ch6AgtSLfy%2Fktd4N7WXMgBBNmaAIWmpVixf6BY7t2AkgGsqESL8mDafiRAN0EnhLK2P3r8xgzBW4Qcf9THYD6K43Txr%2FSfA0ss6jYvvLvqLtnGLXPds6FZScp31BOSq4OriH80NiVuNBsVUwJuSjGC%2BAmfiKH3kJzqSVV5w%3D%3D'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">data</span> <span class="token operator">:</span> data
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token function">axios</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="查询支付结果"><a href="#查询支付结果" class="header-anchor">#</a> 查询支付结果</h3> <p><strong>接口地址</strong></p> <ul><li>地址：<code>/api/v1/payments/inquiryPayment</code></li> <li>方法：<code>POST</code> <strong>请求头</strong>
+参考支付接口
+<strong>请求体</strong></li></ul> <table><thead><tr><th>序号</th> <th>键值</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td></td> <td>JSON</td> <td>如下，查询方式有2中方式</td></tr></tbody></table> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">//第一种</span>
+<span class="token punctuation">{</span>
+    <span class="token property">&quot;paymentId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;20200415194010800100188300223795303&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//第二种</span>
+<span class="token punctuation">{</span>
+    <span class="token property">&quot;paymentRequestId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;REQUEST_20220113170357156&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="验签"><a href="#验签" class="header-anchor">#</a> 验签</h3> <blockquote><p>签名步骤</p></blockquote> <ul><li>第一步：获取<code>支付宝</code>的公钥(大坑，不是应用公钥，是支付宝的)</li> <li>第二步：构造要签名的内容(解释如下示例)</li> <li>第三步：使用<code>SHA256withRSA</code>进行验签。</li></ul> <p><code>SHA256withRSA</code>验签示例</p> <p><code>组装后</code>的加密参数</p> <div class="language-json extra-class"><pre class="language-json"><code>这里无需排序，Post代表请求方式，后面为请求API，其次数据格式（utf<span class="token number">-8</span>），其次商户号，时间戳，然后为提交的数据；
+提交的数据，用Post来接收
+时间格式为 ISO <span class="token number">8601</span> ，例如：<span class="token number">2019</span><span class="token number">-05</span>-28T12<span class="token operator">:</span><span class="token number">12</span><span class="token operator">:</span><span class="token number">12</span>+<span class="token number">08</span><span class="token operator">:</span><span class="token number">00</span>，从post的请求头获取
+
+
+`POST /api/all
+SANDBOX_5Y5X382YF8CZ05415.<span class="token number">2022</span><span class="token number">-01</span>-18T07<span class="token operator">:</span><span class="token number">11</span><span class="token operator">:</span>42Z.<span class="token punctuation">{</span><span class="token property">&quot;notifyType&quot;</span><span class="token operator">:</span><span class="token string">&quot;PAYMENT_RESULT2&quot;</span><span class="token punctuation">}</span>`
+</code></pre></div><blockquote><p>示例代码</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> crypto <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'crypto'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// ----------------</span>
+<span class="token comment">// 验签</span>
+<span class="token comment">// ----------------</span>
+<span class="token keyword">var</span> sig <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">PsUnbVTkBqfIuLr4DTyr2KHdV+1MoO1nl53vIr8WQNafsCT7W/sLH9eEkO4kddnMNXJJnkEcsGFSZScvus9vdwr9v2nIRSpckIrvKxkY8ncl7mjTV/9WgYgUDN+PRm/FEhSw95Qsx14E9Pt2PLQWrz6Y1gLBnfF2xQLS/kALEgVo8zzLj1YYE4g/ar3SK5V7Q9TSQCKf/TScsHFo+PaEEjcuBN6ojZ9iisV8t+LTIpm/36RpZ6WvzspQ5QqgaUL2TeyBwq9fI1PV8vcKzbLdlSCOHuY78qoBUMmwR46av9lS20ibcoEjfdgwvRlQSPK50UW126ADJpE32MqsigExfg==</span><span class="token template-punctuation string">`</span></span>
+<span class="token comment">//大坑，这里的是支付宝的公钥，不是应用公钥</span>
+<span class="token keyword">var</span> publicKey <span class="token operator">=</span> <span class="token string">'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjJkGHwE3wT+Ws3wr3yp+XXyYi7m2ZB2bh9X/noLDaw32twXTCjSLHJJJwdVXro6uRGmgIhzD58hiNrQwBpMjWwgBLfeCdefJYSe71DPw5JYCb+EGH7b2CISCEIvbKtGA834Dhu6zuPqrR/HQKqjY7qIbtpXK4tizRCvSUzRWg3cjV+LtGO2YbzNVrb8aNQfXH3SLhtQyN0SmhcD6x85vOOOmvbZNUX/8aIVbRHB5zEZ5ObxrAzx0kv50Tgd6Er07qhFhh0miobGktOquzFutouO+k6evPSO4RSdDjUMW0E6Zod7CBhvz/bZjCy49iLCEYVEkfcoLL35TDWZaCEoYyQIDAQAB'</span>
+<span class="token comment">// &quot;/api/all&quot; 这个是接收支付宝通知的后缀</span>
+<span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">POST /api/all
+SANDBOX_5Y5X382YF8CZ05415.2022-01-18T07:11:42Z.{&quot;notifyType&quot;:&quot;PAYMENT_RESULT2&quot;}</span><span class="token template-punctuation string">`</span></span>
+
+
+publicKey <span class="token operator">=</span> <span class="token string">&quot;-----BEGIN PUBLIC KEY-----\n&quot;</span> <span class="token operator">+</span>
+  <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> offset <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> str <span class="token operator">=</span> publicKey<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>offset<span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>str <span class="token operator">==</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      offset <span class="token operator">+=</span> <span class="token number">64</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span>
+  <span class="token string">&quot;\n-----END PUBLIC KEY-----&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> verify <span class="token operator">=</span> crypto<span class="token punctuation">.</span><span class="token function">createVerify</span><span class="token punctuation">(</span><span class="token string">'RSA-SHA256'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+verify<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Buffer<span class="token punctuation">.</span>from</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> rst <span class="token operator">=</span> verify<span class="token punctuation">.</span><span class="token function">verify</span><span class="token punctuation">(</span>publicKey<span class="token punctuation">,</span> sig<span class="token punctuation">,</span> <span class="token string">'base64'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>rst<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><ul><li>第四步：返回结果为true或false</li></ul> <h3 id="退款"><a href="#退款" class="header-anchor">#</a> 退款</h3> <p><strong>接口地址</strong></p> <ul><li>地址：<code>/api/v1/payments/refund</code></li> <li>方法：<code>POST</code> <strong>请求头</strong>
+参考支付接口
+<strong>请求体</strong></li></ul> <table><thead><tr><th>序号</th> <th>键值</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td></td> <td>JSON</td> <td>参数如下</td></tr></tbody></table> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;paymentId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;033147158225590726845054580229734628MZuqaeneFE202002210001162837&quot;</span><span class="token punctuation">,</span><span class="token comment">//交易单号</span>
+    <span class="token property">&quot;refundAmount&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PHP&quot;</span><span class="token punctuation">,</span><span class="token comment">//币种，港币为HKD</span>
+        <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;500&quot;</span><span class="token comment">//退款金额</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;refundRequestId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;REFUND_20220113170547076&quot;</span><span class="token comment">//订单号</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="取消付款"><a href="#取消付款" class="header-anchor">#</a> 取消付款</h3> <p><strong>接口地址</strong></p> <ul><li>地址：<code>/api/v1/payments/cancel</code></li> <li>方法：<code>POST</code> <strong>请求头</strong>
+参考支付接口
+<strong>请求体</strong></li></ul> <table><thead><tr><th>序号</th> <th>键值</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>1</td> <td></td> <td>JSON</td> <td>参数如下，2种方式</td></tr></tbody></table> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;paymentRequestId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;REQUEST_20220113170815307&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">{</span>
+    <span class="token property">&quot;paymentId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;20200415194010800100188300223795303&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="测试"><a href="#测试" class="header-anchor">#</a> 测试</h2> <p>测试支付软件下载:<a href="https://global.alipay.com/docs/ac/ref/testwallet" target="_blank" rel="noopener noreferrer">点击下载<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <table><thead><tr><th>测试账号</th> <th>测试密码</th></tr></thead> <tbody><tr><td>amsmerchant01@163.com</td> <td>Alipay123</td></tr> <tr><td>amsmerchant02@163.com</td> <td>Alipay123</td></tr> <tr><td>amsmerchant03@163.com</td> <td>Alipay123</td></tr></tbody></table> <p>在线沙盒验证地址：<a href="https://global.alipay.com/open/console/developer/app/iTest?_route=QK&amp;appId=5Y5X382YF8CZ05415" target="_blank" rel="noopener noreferrer">在线沙盒验证<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language- extra-class"><pre class="language-text"><code>可以模拟付款，退款，查询等操作
+</code></pre></div><h3 id="支付-2"><a href="#支付-2" class="header-anchor">#</a> <strong>支付</strong></h3> <h3 id="入参参考"><a href="#入参参考" class="header-anchor">#</a> 入参参考：</h3> <p>https://global.alipay.com/docs/ac/cashierpayment/getting_started</p> <h4 id="参考值"><a href="#参考值" class="header-anchor">#</a> 参考值</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+   &quot;order&quot;: {
+       &quot;orderAmount&quot;: {
+           &quot;currency&quot;: &quot;HKD&quot;,
+           &quot;value&quot;: &quot;1314&quot;
+       },
+       &quot;orderDescription&quot;: &quot;Mika's coffee shop&quot;,
+       &quot;referenceOrderId&quot;: &quot;ORDER_20220111170809661&quot;,
+       &quot;env&quot;: {
+           &quot;osType&quot;: &quot;ANDROID&quot;,
+           &quot;terminalType&quot;: &quot;WEB&quot;
+       }
+   },
+   &quot;paymentAmount&quot;: {
+       &quot;currency&quot;: &quot;HKD&quot;,
+       &quot;value&quot;: &quot;1314&quot;
+   },
+   &quot;paymentMethod&quot;: {
+       &quot;paymentMethodType&quot;: &quot;ALIPAY_HK&quot;
+   },
+   &quot;settlementStrategy&quot;: {
+       &quot;settlementCurrency&quot;: &quot;HKD&quot;
+   },
+   &quot;paymentNotifyUrl&quot;: &quot;https://www.gaga.com/notify&quot;,
+   &quot;paymentRedirectUrl&quot;: &quot;https://global.alipay.com/doc/cashierpayment/intro&quot;,
+   &quot;paymentRequestId&quot;: &quot;REQUEST_20220111170809661&quot;,
+   &quot;productCode&quot;: &quot;CASHIER_PAYMENT&quot;
+}
+</code></pre></div><h4 id="返回值"><a href="#返回值" class="header-anchor">#</a> 返回值</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;normalUrl&quot;: &quot;https://render.alipay.com/p/c/jzmcoal2/hkcheck-scan.html?paymentId=911381641892298645108352608217660230XqZZPdcakZ202201101003328319&amp;callback=https%3A%2F%2Fglobal.alipay.com%2Fdoc%2Fcashierpayment%2Fintro&amp;amountValue=13.14&amp;amountCurrency=HKD&amp;county=SG&amp;merchantId=21881200018285C1&amp;merchantName=&amp;code=golcashier1641892298660sandbox&amp;referenceOrderId=ORDER_20220111170809661&amp;paymentMethodType=ALIPAY_HK&quot;,
+    &quot;orderCodeForm&quot;: {
+        &quot;codeDetails&quot;: [
+            {
+                &quot;codeValue&quot;: &quot;golcashier1641892298660sandbox&quot;,
+                &quot;displayType&quot;: &quot;TEXT&quot;
+            },
+            {
+                &quot;codeValue&quot;: &quot;https://render.alipay.com/p/c/jzmcoal2/showqrimage.html?picSize=L&amp;code=golcashier1641892298660sandbox&quot;,
+                &quot;displayType&quot;: &quot;BIGIMAGE&quot;
+            },
+            {
+                &quot;codeValue&quot;: &quot;https://render.alipay.com/p/c/jzmcoal2/showqrimage.html?picSize=M&amp;code=golcashier1641892298660sandbox&quot;,
+                &quot;displayType&quot;: &quot;MIDDLEIMAGE&quot;
+            },
+            {
+                &quot;codeValue&quot;: &quot;https://render.alipay.com/p/c/jzmcoal2/showqrimage.html?picSize=S&amp;code=golcashier1641892298660sandbox&quot;,
+                &quot;displayType&quot;: &quot;SMALLIMAGE&quot;
+            }
+        ],
+        &quot;expireTime&quot;: &quot;2022-01-12T03:11:38+08:00&quot;
+    },
+    &quot;paymentActionForm&quot;: &quot;{\&quot;method\&quot;:\&quot;GET\&quot;,\&quot;paymentActionFormType\&quot;:\&quot;RedirectActionForm\&quot;,\&quot;redirectUrl\&quot;:\&quot;https://render.alipay.com/p/c/jzmcoal2/hkcheck-scan.html?paymentId=911381641892298645108352608217660230XqZZPdcakZ202201101003328319&amp;callback=https%3A%2F%2Fglobal.alipay.com%2Fdoc%2Fcashierpayment%2Fintro&amp;amountValue=13.14&amp;amountCurrency=HKD&amp;county=SG&amp;merchantId=21881200018285C1&amp;merchantName=&amp;code=golcashier1641892298660sandbox&amp;referenceOrderId=ORDER_20220111170809661&amp;paymentMethodType=ALIPAY_HK\&quot;}&quot;,
+    &quot;paymentAmount&quot;: {
+        &quot;currency&quot;: &quot;HKD&quot;,
+        &quot;value&quot;: &quot;1314&quot;
+    },
+    &quot;paymentCreateTime&quot;: &quot;2022-01-11T17:11:38+08:00&quot;,
+    &quot;paymentId&quot;: &quot;911381641892298645108352608217660230XqZZPdcakZ202201101003328319&quot;,
+    &quot;paymentRequestId&quot;: &quot;REQUEST_20220111170809661&quot;,
+    &quot;redirectActionForm&quot;: {
+        &quot;method&quot;: &quot;GET&quot;,
+        &quot;redirectUrl&quot;: &quot;https://render.alipay.com/p/c/jzmcoal2/hkcheck-scan.html?paymentId=911381641892298645108352608217660230XqZZPdcakZ202201101003328319&amp;callback=https%3A%2F%2Fglobal.alipay.com%2Fdoc%2Fcashierpayment%2Fintro&amp;amountValue=13.14&amp;amountCurrency=HKD&amp;county=SG&amp;merchantId=21881200018285C1&amp;merchantName=&amp;code=golcashier1641892298660sandbox&amp;referenceOrderId=ORDER_20220111170809661&amp;paymentMethodType=ALIPAY_HK&quot;
+    },
+    &quot;result&quot;: {
+        &quot;resultCode&quot;: &quot;PAYMENT_IN_PROCESS&quot;,
+        &quot;resultMessage&quot;: &quot;Payment is processing.&quot;,
+        &quot;resultStatus&quot;: &quot;U&quot;
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/15/2022, 1:35:28 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/apidocs/xiaobingBot.html" class="prev">
+        微软小冰 Bot
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ff5f18e1.js" defer></script><script src="/assets/js/2.6b8ff628.js" defer></script><script src="/assets/js/9.2f529b4b.js" defer></script>
+  </body>
+</html>
