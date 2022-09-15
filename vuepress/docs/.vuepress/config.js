@@ -31,6 +31,10 @@ module.exports = {
         link: '/',
       },
       {
+        text: '开发日记',
+        link: '/daynotes/',
+      },
+      {
         text: 'API',
         link: '/apidocs/',
       },
@@ -41,6 +45,7 @@ module.exports = {
     ],
     sidebar: {
       '/apidocs/': ['', 'xiaobingBot', 'globalAlipay'],
+      '/daynotes/': ['', 'githubAction'],
     },
     lastUpdated: 'Last Updated',
   },
