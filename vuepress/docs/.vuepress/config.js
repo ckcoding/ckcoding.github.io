@@ -31,6 +31,17 @@ module.exports = {
         link: '/',
       },
       {
+        text: '知识库',
+        items:[
+          {text:'github自动化', link: '/knowledge/githubAction.md'}, // 可不写后缀 .md,也可以设置外部链接
+          {text:'uniapp', link: '/knowledge/uniapp'},
+          {text:'微信小程序', link: '/knowledge/miniProgram'},
+          {text:'Nodejs', link: '/knowledge/nodejs'},
+          {text:'js', link: '/knowledge/javaScript'},
+          {text:'css', link: '/knowledge/css'}
+      ]
+      },
+      {
         text: '开发日记',
         link: '/daynotes/',
       },
@@ -38,15 +49,29 @@ module.exports = {
         text: 'API',
         link: '/apidocs/',
       },
-      {
-        text: 'GitHup',
+      { 
+        text: 'GitHub',
         link: 'https://github.com/ckcoding',
       },
     ],
     sidebar: {
       '/apidocs/': ['', 'xiaobingBot', 'globalAlipay'],
       '/daynotes/': [''],
+      // '/knowledge/': ['','githubAction','uniapp','miniProgram','nodejs','javaScript','css'],
     },
-    lastUpdated: 'Last Updated',
+    lastUpdated: '上次更新',
+    plugins: [
+      [
+        '@vuepress/last-updated',
+        {
+          transformer: (timestamp, lang) => {
+            // 不要忘了安装 moment
+            const moment = require('moment')
+            moment.locale(lang)
+            return moment(timestamp).fromNow()
+          }
+        }
+      ]
+    ]
   },
 };
