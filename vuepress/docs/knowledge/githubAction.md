@@ -1,6 +1,6 @@
 # Github Actions
 
-## 打包编译上传vue项目
+## 打包编译vue项目上传到github
 ``` yaml
 name: Build and Deploy #这个名字无所谓
 on: 
@@ -29,3 +29,6 @@ jobs:
           folder: dist # 你要传的目录
 
 ```
+
+## 打包编译vue项目,并自动部署到服务器
+待填

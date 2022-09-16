@@ -64,9 +64,17 @@ module.exports = {
     sidebar: {
       '/apidocs/': ['', 'xiaobingBot', 'globalAlipay'],
       '/daynotes/': [''],
-      // '/knowledge/': ['','githubAction','uniapp','miniProgram','nodejs','javaScript','css'],
+      '/knowledge/githubAction': ['githubAction'],
+      '/knowledge/uniapp': ['uniapp'],
+      '/knowledge/miniProgram': ['miniProgram'],
+      '/knowledge/nodejs': ['nodejs'],
+      '/knowledge/javaScript': ['javaScript'],
+      '/knowledge/css': ['css'],
     },
     lastUpdated: '上次更新',
+    sidebar: 'auto', //自动生成侧边栏
+    search: true,
+    searchMaxSuggestions: 10
     // algolia: {
     //   apiKey: '<API_KEY>',
     //   indexName: '<INDEX_NAME>'
