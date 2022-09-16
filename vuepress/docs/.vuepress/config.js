@@ -42,6 +42,13 @@ module.exports = {
       ]
       },
       {
+        text: '工具',
+        items:[
+          {text:'时间戳', link: 'https://tool.lu/timestamp/',target:'_blank'},
+          {text:'postMan', link: 'https://hoppscotch.io/cn/',target:'_blank'}
+      ]
+      },
+      {
         text: '开发日记',
         link: '/daynotes/',
       },
@@ -60,18 +67,9 @@ module.exports = {
       // '/knowledge/': ['','githubAction','uniapp','miniProgram','nodejs','javaScript','css'],
     },
     lastUpdated: '上次更新',
-    plugins: [
-      [
-        '@vuepress/last-updated',
-        {
-          transformer: (timestamp, lang) => {
-            // 不要忘了安装 moment
-            const moment = require('moment')
-            moment.locale(lang)
-            return moment(timestamp).fromNow()
-          }
-        }
-      ]
-    ]
+    // algolia: {
+    //   apiKey: '<API_KEY>',
+    //   indexName: '<INDEX_NAME>'
+    // }
   },
 };
