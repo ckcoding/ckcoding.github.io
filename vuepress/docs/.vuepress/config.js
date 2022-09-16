@@ -45,7 +45,7 @@ module.exports = {
     ],
     sidebar: {
       '/apidocs/': ['', 'xiaobingBot', 'globalAlipay'],
-      '/daynotes/': ['', 'githubAction'],
+      '/daynotes/': [''],
     },
     lastUpdated: 'Last Updated',
   },
