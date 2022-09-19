@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 <center style="margin:100px 0px 40px">
    <img width="25%" src="../images/logo.png" alt="logo">
 </center>
