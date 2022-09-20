@@ -89,7 +89,7 @@ curl test.ipw.cn
 - 登录Cloudflare添加你的域名，并选择免费计划
 
 
-![](/vuepress/docs/images/daynote/1.png)
+![](../images/daynote/1.png)
 
 
 
