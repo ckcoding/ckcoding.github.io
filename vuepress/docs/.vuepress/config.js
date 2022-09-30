@@ -1,6 +1,3 @@
-// const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
-import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
-const __dirname = getDirname(import.meta.url)
 module.exports = {
   title: 'ckcoding',
   description: '愿天堂没有996',
@@ -81,15 +78,7 @@ module.exports = {
     lastUpdated: '上次更新',
     sidebar: 'auto', //自动生成侧边栏
     search: true,
-    searchMaxSuggestions: 10,
-    plugins: [
-      registerComponentsPlugin({
-        // 配置项
-        components: {
-          componentsDir: path.resolve(__dirname, './components')
-        },
-      }),
-    ],
+    searchMaxSuggestions: 10
     // algolia: {
     //   apiKey: '<API_KEY>',
     //   indexName: '<INDEX_NAME>'
