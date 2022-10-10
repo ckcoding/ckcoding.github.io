@@ -15,6 +15,28 @@ white-space:nowrap;
 
 
 ## JS
+
+### 数组中是否存在该值或者对象
+```js
+let Arr = [{},{}]
+let item = {}
+JSON.stringify(Arr).includes(JSON.stringify(item))
+```
+
+### 常用简写
+```js
+let a =[],b=[],c=[]
+// 等同于下面
+const [a,b,c] = [[],[],[]]
+/** let c = {a,b,c} 
+ * {
+  a:a,
+  b:b
+  c:c
+ * }
+*/
+```
+
 ### 睡眠函数
 ```js
 let sleep = (time)=> new Promise((resolve)=>{
