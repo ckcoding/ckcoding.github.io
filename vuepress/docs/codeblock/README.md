@@ -22,6 +22,21 @@ let sleep = (time)=> new Promise((resolve)=>{
 })
 ```
 
+### 搜索截流
+```js
+watch: {
+  searchV() {
+    if (!this.searchV) {return this.getList();}
+      this.timeId ? clearTimeout(this.timeId) : '';
+      this.timeId = setTimeout(() => {
+        this.getList()
+        }, 500);
+      },
+    },
+```
+
+
+
 ### 不同字段值的数据字段合并为同一字段
 
 
