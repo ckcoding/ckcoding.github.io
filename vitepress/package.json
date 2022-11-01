@@ -1,9 +1,8 @@
 {
-  "name": "VitePress",
+  "name": "ckcode",
   "version": "1.0.0",
+  "description": "开发日常记录",
   "main": "index.js",
-  "repository": "https://github.com/ckcoding/VitePress.git",
-  "author": "ck <ckcode@icloud.com>",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev docs",
