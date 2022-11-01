@@ -1,7 +1,7 @@
 export default  {
   title: 'ckcoding',
   description: '愿天堂没有996',
-  dest: 'dist',
+  outDir: '../../dist',
   themeConfig: {
     logo: '/images/logo.svg',
     nav: [
