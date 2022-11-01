@@ -1,5 +1,9 @@
 
 # JS
+<script setup>
+  import testCode from '../../components/test-code.vue'
+</script>
+<test-code/>
 
 ## 数组中是否存在该值或者对象
 ```js
@@ -46,25 +50,6 @@ watch: {
 
 ## 不同字段值的数据字段合并为同一字段
 
-
-
-<div><a target='_blank' href='https://playcode.io/javascript'
-style="font-size: 4rem;
-position: fixed;
-  bottom: 50px;
-  right: 50px;
-  height:100px;
-  width:100px;
-  line-height:100px;
-  color: #fff;
-    margin-left:300px;
-    border-radius: 50%;
-    text-align: center;
-    transition: background-color .1s ease;
-    box-sizing: border-box;
-    z-index:999;
-    "
->✍️</a></div>
 
 ```js
 const Arr = Object.keys(i); //i 为一个对象

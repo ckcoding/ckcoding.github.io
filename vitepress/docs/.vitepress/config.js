@@ -25,9 +25,7 @@ export default  {
           {text:'github自动化', link: '/knowledge/githubAction.md'}, // 可不写后缀 .md,也可以设置外部链接
           {text:'uniapp', link: '/knowledge/uniapp'},
           {text:'微信小程序', link: '/knowledge/miniProgram'},
-          {text:'Nodejs', link: '/knowledge/nodejs'},
-          {text:'js', link: '/knowledge/javaScript'},
-          {text:'css', link: '/knowledge/css'}
+          {text:'更多🎉', link: '/knowledge/nodejs'},
       ]
       , activeMatch:'knowledge'
       },
@@ -35,7 +33,9 @@ export default  {
         text: '工具',
         items:[
           {text:'时间戳', link: 'https://tool.lu/timestamp/',target:'_blank'},
-          {text:'postMan', link: 'https://hoppscotch.io/cn/',target:'_blank'}
+          {text:'postMan', link: 'https://hoppscotch.io/cn/',target:'_blank'},
+          {text:'Grid布局生成', link: 'https://cssgrid-generator.netlify.app/',target:'_blank'},
+          {text:'更多🎉', link: '/url/'},
       ]
       },
       
@@ -56,9 +56,9 @@ export default  {
           collapsible: true,
           collapsed: false,
           items: [
-            { text: 'API文档', link: '/apidocs/' }, // /guide/index.md
-            { text: '微软小冰', link: '/apidocs/xiaobingBot' }, // /guide/one.md
-            { text: '国际支付宝', link: '/apidocs/globalAlipay' } // /guide/two.md
+            { text: 'API文档', link: '/apidocs/' }, 
+            { text: '微软小冰', link: '/apidocs/xiaobingBot' }, 
+            { text: '国际支付宝', link: '/apidocs/globalAlipay' } 
           ]
         }
       ],
@@ -68,9 +68,8 @@ export default  {
           collapsible: true,
           collapsed: false,
           items: [
-            { text: 'JavaScript', link: '/codeblock/js' }, // /guide/index.md
-            { text: 'css', link: '/codeblock/css' }, // /guide/one.md
-            { text: '国际支付宝', link: '/apidocs/globalAlipay' } // /guide/two.md
+            { text: 'JavaScript', link: '/codeblock/js' }, 
+            { text: 'css', link: '/codeblock/css' }, 
           ]
         }
       ],
@@ -80,8 +79,9 @@ export default  {
           collapsible: true,
           collapsed: false,
           items: [
-            { text: 'GitHub自动化', link: '/daynotes/githubAction' }, // /guide/index.md
-            { text: 'ivp6', link: '/daynotes/ipv6' } // /guide/two.md
+            { text: 'GitHub自动化', link: '/daynotes/githubAction' }, 
+            { text: 'ivp6', link: '/daynotes/ipv6' },
+            { text: '国际支付宝', link: '/daynotes/globalAlipay' } 
           ]
         }
       ]
@@ -92,7 +92,7 @@ export default  {
           collapsible: true,
           collapsed: false,
           items: [
-            { text: 'GitHub自动化', link: '/knowledge/githubAction' }, // /guide/index.md
+            { text: 'GitHub自动化', link: '/knowledge/githubAction' }, 
             { text: 'uniapp', link: '/knowledge/uniapp' },
             { text: '微信小程序', link: '/knowledge/miniProgram' },
             { text: 'Nodejs', link: '/knowledge/nodejs' },
