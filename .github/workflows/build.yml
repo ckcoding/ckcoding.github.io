@@ -32,8 +32,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /vitepress/docs/.vitepress/dist
-          # publish_branch: build-pages
+          publish_dir: /vitepress/docs/.vitepress/dist/
+          publish_branch: build-pages
 
       # - name: Deploy 🚀
       #   uses: JamesIves/github-pages-deploy-action@releases/v3
