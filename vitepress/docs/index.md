@@ -14,7 +14,7 @@ hero:
       link: https://github.com/ckcoding
 
 features:
-  - icon: 🤩
+  - icon: 💡
     title: 开发日常记录
     details: 伪博客
   - icon: 💻
