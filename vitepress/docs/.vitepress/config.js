@@ -3,7 +3,7 @@ export default  {
   description: '愿天堂没有996',
   outDir: '../../dist',
   themeConfig: {
-    logo: './images/logo.svg',
+    logo: '../images/logo.svg',
     nav: [
       {
         text: '首页',
@@ -104,6 +104,7 @@ export default  {
     lang:'zh-CN',
     lastUpdated: true,
     algolia: {
+      apiId:'',
       apiKey: '921e8aa99c643c8e7e80f2158c75df3a',
       indexName: 'ckcode'
     },
