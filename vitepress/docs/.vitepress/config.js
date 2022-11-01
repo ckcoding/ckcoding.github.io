@@ -10,6 +10,16 @@ export default  {
         link: '/'
       },
       {
+        text: '开发日记',
+        link: '/daynotes/',
+        activeMatch:'daynotes'
+      },
+      {
+        text: '代码块',
+        link: '/codeblock/',
+        activeMatch:'codeblock'
+      },
+      {
         text: '知识库',
         items:[
           {text:'github自动化', link: '/knowledge/githubAction.md'}, // 可不写后缀 .md,也可以设置外部链接
@@ -28,16 +38,7 @@ export default  {
           {text:'postMan', link: 'https://hoppscotch.io/cn/',target:'_blank'}
       ]
       },
-      {
-        text: '开发日记',
-        link: '/daynotes/',
-        activeMatch:'daynotes'
-      },
-      {
-        text: '代码块',
-        link: '/codeblock/',
-        activeMatch:'codeblock'
-      },
+      
       {
         text: 'API',
         link: '/apidocs/',
