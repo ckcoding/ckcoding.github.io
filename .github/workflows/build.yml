@@ -15,10 +15,10 @@ jobs:
           node-version: 16
           cache: yarn
       - name: cd && Build
-        run: 
-        cd vitepress
-        yarn
-        yarn build
+        run: |
+          cd vitepress
+          yarn
+          yarn build
 
       # - name: install
       #   run: yarn install --frozen-lockfile
