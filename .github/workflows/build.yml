@@ -16,23 +16,23 @@ jobs:
           node-version: 16
           cache: yarn
       - name: cd && Build
-        run: cd vitepress
-        # run: |
-        #   cd vitepress
-        #   yarn install --frozen-lockfile
-        #   yarn build
+        # run: cd vitepress
+        run: |
+          cd vitepress
+          yarn install --frozen-lockfile
+          yarn build
 
-      - name: install
-        run: yarn install --frozen-lockfile
+      # - name: install
+      #   run: yarn install --frozen-lockfile
 
-      - name: Build
-        run: yarn build
+      # - name: Build
+      #   run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_dir: /vitepress/docs/.vitepress/dist
           publish_branch: build-pages
 
       # - name: Deploy 🚀
