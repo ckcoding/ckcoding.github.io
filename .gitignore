@@ -3,3 +3,4 @@ vuepress/node_modules/*
 dist/*
 .DS_Store
 vitepress/node_modules/*
+vitepress/docs/.vitepress/dist/*

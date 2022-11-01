@@ -33,7 +33,7 @@ curl test.ipw.cn
 - 登录Cloudflare添加你的域名，并选择免费计划
 
 
-![](/vuepress/docs/images/daynote/1.png)
+![](/images/daynote/1.png)
 
 
 
@@ -43,10 +43,10 @@ curl test.ipw.cn
 - 修改完毕后，需要一段时间进行解析`Cloudflare`会自动检测，一般几分钟就成功了
 - 然后手动添加一条DNS记录如下图。记得开启这个已代理，图标为黄色即为开启
   
-![](/vuepress/docs/images/daynote/2.jpg)
+![](/images/daynote/2.jpg)
 
 - 然后获取`Cloudflare`的api密钥，如下图(注意⚠️，ikuai必须使用全局的密钥)
 
-![](/vuepress/docs/images/daynote/3.png)
+![](/images/daynote/3.png)
 
 - 最后等待几个小时后即可在ipv4环境下访问ipv6
