@@ -3,7 +3,7 @@ export default  {
   description: '愿天堂没有996',
   outDir: '../../dist',
   themeConfig: {
-    logo: '/images/logo.svg',
+    logo: './images/logo.svg',
     nav: [
       {
         text: '首页',

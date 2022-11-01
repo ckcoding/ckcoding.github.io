@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: /codeblock/
     - theme: alt
       text:  Go GitHub
       link: https://github.com/ckcoding
