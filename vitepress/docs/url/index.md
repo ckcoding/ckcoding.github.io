@@ -1,8 +1,8 @@
 # 优质、常用网站
-## Grad布局生成
+## grid布局生成
 
 ::: info 介绍
-可以在线生成grad布局的网站，非常适合新手学习，同时他也是一个开源网站
+可以在线生成grid布局的网站，非常适合新手学习，同时他也是一个开源网站
 
 `官网:` https://cssgrid-generator.netlify.app/
 
