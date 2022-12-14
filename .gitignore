@@ -5,3 +5,4 @@ dist/*
 vitepress/node_modules/*
 vitepress/docs/.vitepress/dist/*
 node_modules/*
+.history/*

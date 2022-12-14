@@ -93,6 +93,7 @@ export default  {
           collapsed: false,
           items: [
             { text: 'GitHub自动化', link: '/knowledge/githubAction' }, 
+            { text: 'vue', link: '/knowledge/vue' },
             { text: 'uniapp', link: '/knowledge/uniapp' },
             { text: '微信小程序', link: '/knowledge/miniProgram' },
             { text: 'Nodejs', link: '/knowledge/nodejs' },
