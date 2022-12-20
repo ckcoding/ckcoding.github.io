@@ -99,6 +99,10 @@ export default  {
             { text: 'Nodejs', link: '/knowledge/nodejs' },
             { text: 'js', link: '/knowledge/javaScript' },
             { text: 'css', link: '/knowledge/css' },
+            { text: '各类破解教程', link: '/knowledge/fuck' }, 
+            { text: '服务器开发', link: '/knowledge/serverDocs' }, 
+            { text: 'docker', link: '/knowledge/docker' }, 
+            
           ]
         }
       ]
