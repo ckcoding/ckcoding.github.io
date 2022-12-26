@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as e,d as n}from"./app.4b0ed9b4.js";const C=JSON.parse('{"title":"\u6BCF\u6708\u5FC5\u505A","description":"","frontmatter":{},"headers":[],"relativePath":"knowledge/memos.md"}'),o={name:"knowledge/memos.md"},l=n("",13),p=[l];function c(r,t,i,D,y,d){return a(),e("div",null,p)}const h=s(o,[["render",c]]);export{C as __pageData,h as default};
