@@ -1,7 +1,7 @@
 
-# css
+# 微信小程序
 
-## css省略号
+## 微信小程序wxs
 ```js
 <wxs module="format">
   var toHide = function (data, frist, end) {
@@ -61,12 +61,12 @@
   }
 </wxs>
 ```
-# 微信小程序动态输入
-## wxml
+## 微信小程序动态输入
+### wxml
 ```html
 <input type="text" placeholder="请输入" bindinput="myInput" data-value="departure"  value="{{myInfo.departure}}"/>
 ```
-## js
+### js
 ```js
   //我的输入
   myInput(e) {
