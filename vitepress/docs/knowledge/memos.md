@@ -1,8 +1,17 @@
 # 每月必做
 
+1:领取联通沃特权：https://qy.chinaunicom.cn/mobile-h5/plus/plus.html?channelid=100000469&flag=loginShow （2个微信号）
 
+2:领99游戏：https://member.zlhz.wostore.cn/wcy_game_vip/prd/usercenter.html（182联通）
 
-# ☁️
+3:玖玖权益公众号出售
+
+# 神API
+微信官方免费图片/音频是否含有违法违规内容：https://developers.weixin.qq.com/miniprogram/dev/framework/security.mediaCheckAsync-v1.html
+
+微信官方免费文本是否含有违法违规内容：https://developers.weixin.qq.com/miniprogram/dev/framework/security.msgSecCheck-v1.html
+
+# 良心☁️
 
 alexaneschaden@xyzmailpro.com (28天)
 ```sh
@@ -27,5 +36,3 @@ _ga=GA1.2.359573234.1666066387; Cookie=enabled; Cookie.sig=lbtpENsrE0x6riM8PFTvo
 _ga=GA1.2.359573234.1666066387; Cookie=enabled; Cookie.sig=lbtpENsrE0x6riM8PFTvoh9nepc; koa:sess=eyJ1c2VySWQiOjQzNDUxLCJfZXhwaXJlIjoxNjk3ODU4NDA0NzI3LCJfbWF4QWdlIjoyNTkyMDAwMDAwMH0=; koa:sess.sig=8P6e8wM13KGd_i3KLKjAJ4WJ0Hg
 ```
 
-
-https://update.glados-config.com/netch/43451/0d660ca133dcdd4f

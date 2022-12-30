@@ -70,6 +70,7 @@ export default  {
           items: [
             { text: 'JavaScript', link: '/codeblock/js' }, 
             { text: 'css', link: '/codeblock/css' }, 
+            { text: '微信小程序', link: '/codeblock/miniprogram' }, 
           ]
         }
       ],

@@ -52,5 +52,28 @@ https://github.com/gys619/jdd.git
 ```
 
 ### 依赖
-
-
+```
+sablejs
+string-random
+js-sha256
+ts-node
+typescript
+crypto-js
+md5
+dotenv
+got
+ts-md5
+tslib
+@types/node
+requests
+tough-cookie
+jsdom
+download
+tunnel
+ws
+js-base64
+date-fns
+png-js
+axios
+nodemailer
+```
