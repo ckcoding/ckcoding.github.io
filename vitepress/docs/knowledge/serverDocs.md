@@ -129,3 +129,21 @@ sudo nmcli device wifi 名称 password 密码
 ```sh
 yum install -y wget && wget -O install.sh https://download.bt.cn/install/install_6.0.sh && sh install.sh ed8484bec
 ```
+
+
+## 通用命令
+
+### 查看磁盘
+```sh
+
+fdisk -lu #查看磁盘
+sudo mkfs -t ext4 /dev/sda #将某个盘格式化为ext4格式
+sudo mount /dev/sda /usb # 挂载/dev/sda 到/usb目录下
+sudo umount /usb #卸载挂载到usb的磁盘
+du -sh * # 查看文件占用情况
+```
+
+# 其他
+```sh
+find /www/wwwroot/dt.yhqsj.cn/upload/  -mtime +1  -name "CG*" -exec rm -rf {}  #删除某个目录下超过一天时间，并且以CG开头的文件，可宝塔定时脚本
+```
