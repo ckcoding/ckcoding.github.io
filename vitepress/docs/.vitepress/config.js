@@ -102,6 +102,7 @@ export default  {
             { text: 'css', link: '/knowledge/css' },
             { text: '服务器开发', link: '/knowledge/serverDocs' }, 
             { text: 'docker', link: '/knowledge/docker' }, 
+            { text: 'win', link: '/knowledge/win' }, 
             
           ]
         }
