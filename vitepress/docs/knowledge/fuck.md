@@ -42,11 +42,35 @@ slmgr /skms kms8.msguides.com
 slmgr /ato
 ```
 
+## Esxi正版破解 
+
+`注意是，正版，不是盗版`
+
+### 版本密钥键值对
+
+```
+EXIS8.0注册码：
+HG00K-03H8K-48929-8K1NP-3LUJ4
+4V492-44210-48830-931GK-2PRJ4
+
+EXIS7.0注册码：
+JA0W8-AX216-08E19-A995H-1PHH2
+JU45H-6PHD4-481T1-5C37P-1FKQ2
+1U25H-DV05N-H81Y8-7LA7P-8P0N4
+HV49K-8G013-H8528-P09X6-A220A
+1G6DU-4LJ1K-48451-3T0X6-3G2MD
+5U4TK-DML1M-M8550-XK1QP-1A052
+JJ2WR-25L9P-H71A8-6J20P-C0K3F
+HN2X0-0DH5M-M78Q1-780HH-CN214
+JH09A-2YL84-M7EC8-FL0K2-3N2J2
+```
 # 每月必做
 
-1:领取联通沃特权：https://qy.chinaunicom.cn/mobile-h5/plus/plus.html?channelid=100000469&flag=loginShow （2个微信号）
+1:领取联通沃特权：https://qy.chinaunicom.cn/mobile-h5/plus/plus.html?channelid=100000469&flag=loginShow
+（2个微信号）
 
-2:领99游戏：https://member.zlhz.wostore.cn/wcy_game_vip/prd/usercenter.html（182联通）
+2:领99游戏：https://member.zlhz.wostore.cn/wcy_game_vip/prd/usercenter.html
+（182联通）
 
 3:玖玖权益公众号出售
 
