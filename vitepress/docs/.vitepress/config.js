@@ -111,7 +111,7 @@ export default  {
     lang:'zh-CN',
     lastUpdated: true,
     algolia: {
-      apiId:'',
+      apiId:'HY8R6J42TY',
       apiKey: '921e8aa99c643c8e7e80f2158c75df3a',
       indexName: 'ckcode'
     },
