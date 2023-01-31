@@ -112,8 +112,10 @@ export default  {
     lastUpdated: true,
     algolia: {
       apiId:'HY8R6J42TY',
-      apiKey: '921e8aa99c643c8e7e80f2158c75df3a',
-      indexName: 'ckcode'
+      apiKey: '5c83b1fd5fe417bfe180a2f7dd950e7b',
+      indexName: 'ckcode',
+      placeholder: '请输入关键词',
+      buttonText: '搜索',
     },
     lastUpdatedText: '上次更新',
     outlineTitle: '目录',
