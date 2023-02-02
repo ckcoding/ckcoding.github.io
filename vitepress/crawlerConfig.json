@@ -1,6 +1,6 @@
 {
   "index_name": "ckcode", 
-  "start_urls": ["https://ckcoding.github.io/"],
+  "start_urls": ["https://chodocs.cn/"], // 填写自己的网站地址
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
