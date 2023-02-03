@@ -1,6 +1,6 @@
 {
   "index_name": "ckcode", 
-  "start_urls": ["https://ckcoding.github.io/"],
+  "start_urls": ["https://ckcoding.github.io/*"],
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
