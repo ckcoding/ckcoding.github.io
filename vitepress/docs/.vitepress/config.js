@@ -118,7 +118,7 @@ export default  {
     lastUpdatedText: '上次更新',
     outlineTitle: '目录',
     footer: {
-      message: '本项基于 <a href="https://github.com/ckcoding"  target="_blank">GitHub</a> 构建',
+      message: '本项目基于 <a href="https://github.com/ckcoding"  target="_blank">GitHub</a> 构建， <a href="https://www.algolia.com/"  target="_blank">algolia</a> 搜索',
       copyright: getData()
     },
     // carbonAds: {
