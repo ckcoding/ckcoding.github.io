@@ -1,6 +1,6 @@
 # 各类激活教程
 
-## Windows10正版破解 
+## Windows10正版破解(兼容win11) 
 
 `注意是，正版，不是盗版`
 
@@ -40,6 +40,15 @@
 slmgr /ipk {yourlicensekey}
 slmgr /skms kms8.msguides.com
 slmgr /ato
+```
+#### 快捷复制
+```sh
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+
+slmgr /skms kms8.msguides.com
+
+slmgr /ato
+
 ```
 
 ## Esxi正版破解 
