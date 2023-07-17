@@ -118,7 +118,7 @@ export default  {
     lastUpdatedText: '上次更新',
     outlineTitle: '目录',
     footer: {
-      message: '本项目基于 <a href="https://github.com/ckcoding"  target="_blank">GitHub</a> 构建， <a href="https://www.algolia.com/"  target="_blank">algolia</a> 搜索',
+      message: '本项目基于 <a href="https://github.com/ckcoding"  target="_blank">GitHub</a> 构建， <a href="https://www.algolia.com/"  target="_blank">algolia</a> 搜索<br/><a href="https://beian.miit.gov.cn/" target="_blank">陇ICP备17006181号-3</a>',
       copyright: getData()
     },
     // carbonAds: {
