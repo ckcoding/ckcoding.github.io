@@ -7,3 +7,5 @@ vitepress/docs/.vitepress/dist/*
 node_modules/*
 .history/*
 node_modules
+test/*
+.idea/*

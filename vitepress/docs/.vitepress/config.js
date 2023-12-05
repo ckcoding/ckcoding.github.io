@@ -101,9 +101,10 @@ export default  {
             { text: 'js', link: '/knowledge/javaScript' },
             { text: 'css', link: '/knowledge/css' },
             { text: '服务器开发', link: '/knowledge/serverDocs' }, 
-            { text: 'docker', link: '/knowledge/docker' }, 
-            { text: 'win', link: '/knowledge/win' }, 
-            
+            { text: 'docker', link: '/knowledge/docker' },
+            { text: 'Mac', link: '/knowledge/Mac' },
+            { text: 'win', link: '/knowledge/win' },
+
           ]
         }
       ]
